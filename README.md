@@ -29,13 +29,11 @@ A Python Discord ticket management bot built with `discord.py`. It handles ticke
 ## Installation
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 Copy-Item .env.example .env
-python bot.py
+py bot.py
 ```
 
 ## Configuration
@@ -100,9 +98,3 @@ Runtime data is created automatically in `data/`.
 data/store.json    # users, tickets, quota period, biweekly goal
 data/rewards.json  # reward list
 ```
-
-`data/*.json` is ignored by git so production data is not committed.
-
-## Security
-
-Never commit `.env` or a real Discord bot token. If a token was ever posted publicly or pushed to GitHub, reset it in the Discord Developer Portal.
